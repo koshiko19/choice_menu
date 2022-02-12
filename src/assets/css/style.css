@@ -19,8 +19,12 @@ li {
 
 .container {
 	max-width: 950px;
-	margin: 40px 0 10px;
+	margin: 0 auto;
 	text-align: center;
+}
+
+.top-content-wrap {
+	margin-top: 40px;
 }
 
 .random-button {
@@ -28,20 +32,26 @@ li {
 	background: #FFC185;
 	border-radius: 4px;
 	margin: 0 auto;
+	margin-top: 15px;
 	padding: 15px 0;
 	font-size: 20px;
 	font-weight: bold;
 	box-sizing: border-box;
 }
 
+.choice-content-wrap {
+	margin-top: 25px;
+}
+
 .choice-title {
-	margin: 25px 0 20px;
+	/* margin: 25px 0 20px; */
 }
 
 .choice-genre {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-top: 20px;
 }
 
 .genre {
@@ -61,6 +71,10 @@ li {
 
 .genre:not(:first-child) {
 	margin-left: 10px;
+}
+
+.select-choice-wrap {
+	margin-top: 25px;
 }
 
 .select-menu-image {
