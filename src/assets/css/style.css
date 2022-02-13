@@ -56,12 +56,16 @@ li {
 
 .genre {
 	width: 120px;
-	height: 60px;
-	padding: 15px 0;
 	border: 3px solid #FFC185;
 	border-radius: 4px;
 	box-sizing: border-box;
 	font-weight: bold;
+}
+
+.genre a {
+	display: block;
+	padding: 15px 0;
+	color: #4E4E4E;
 }
 
 .genre:hover {
@@ -80,6 +84,7 @@ li {
 .select-menu-image {
 	width: 300px;
 	height: auto;
+	margin-top: 10px;
 }
 
 .select-menu {
@@ -93,8 +98,17 @@ li {
 	background: #FFC185;
 	border-radius: 4px;
 	margin: 10px auto 0;
-	padding: 10px 0;
 	font-size: 15px;
 	font-weight: bold;
 	box-sizing: border-box;
+}
+
+.select-button a {
+	display: block;
+	padding: 15px 0;
+	color: #4E4E4E;
+}
+
+.select-button a:hover {
+	color: #FFFFFF;
 }

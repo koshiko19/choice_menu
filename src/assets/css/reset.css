@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*!
  * ress.css • v4.0.0
  * MIT License
@@ -70,6 +72,7 @@
 
   a {
 	background-color: transparent; /* Remove the gray background on active links in IE 10 */
+	text-decoration: none;
   }
 
   a:active,
