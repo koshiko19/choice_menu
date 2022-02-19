@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Top from '../views/Top.vue'
 import Select from '../views/selectMenu.vue'
 
 
@@ -7,7 +7,7 @@ const routes = [
 	{
 		path: '/',
 		name: 'Home',
-		component: Home,
+		component: Top,
 		props: true,
 	},
 	{

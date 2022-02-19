@@ -2,7 +2,9 @@
 	<div class="container">
 		<div class="top-content-wrap">
 			<h1>今日のご飯を探しましょう！</h1>
-			<div class="random-button">おまかせで！</div>
+			<div class="random-button">
+				<router-link :to="{name: 'Select', params: {id: 0}}">おまかせ</router-link>
+			</div>
 		</div>
 		<div class="choice-content-wrap">
 			<h2 class="choice-title">食べたいジャンルはありますか？</h2>

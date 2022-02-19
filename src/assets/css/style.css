@@ -43,10 +43,6 @@ li {
 	margin-top: 25px;
 }
 
-.choice-title {
-	/* margin: 25px 0 20px; */
-}
-
 .choice-genre {
 	display: flex;
 	justify-content: center;
@@ -73,7 +69,7 @@ li {
 	color: #FFFFFF;
 }
 
-.genre:not(:first-child) {
+.genre + .genre {
 	margin-left: 10px;
 }
 
@@ -111,4 +107,35 @@ li {
 
 .select-button a:hover {
 	color: #FFFFFF;
+}
+
+@media screen and (max-width: 775px) {
+	.top-content-wrap h1 {
+		font-size: 25px;
+	}
+
+	.choice-title {
+		font-size: 20px;
+	}
+
+	.choice-genre {
+		margin-top: 10px;
+	}
+
+	.genre {
+		width: calc(100% / 3 - 20px);
+		margin-top: 10px;
+		border: 3px solid #FFC185;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-weight: bold;
+	}
+
+	.genre + .genre {
+		margin-left: 0px;
+	}
+
+	.genre:not(:nth-child(3n + 1)) {
+		margin-left: 10px;
+	}
 }
