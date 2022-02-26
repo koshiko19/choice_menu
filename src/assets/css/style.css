@@ -9,12 +9,12 @@ li {
 }
 
 .header {
-	height: 60px;
+	height: 50px;
 	background: #FFC185;
 	text-align: center;
 	font-size: 20px;
 	font-weight: bold;
-	line-height: 60px;
+	line-height: 50px;
 }
 
 .container {
@@ -33,7 +33,6 @@ li {
 	border-radius: 4px;
 	margin: 0 auto;
 	margin-top: 15px;
-	padding: 15px 0;
 	font-size: 20px;
 	font-weight: bold;
 	box-sizing: border-box;
@@ -41,6 +40,7 @@ li {
 
 .random-button > a {
 	display: block;
+	padding: 15px 0;
 	color: #4E4E4E;
 }
 
@@ -56,7 +56,7 @@ li {
 }
 
 .genre {
-	width: 120px;
+	width: 125px;
 	border: 3px solid #FFC185;
 	border-radius: 4px;
 	box-sizing: border-box;
@@ -114,6 +114,12 @@ li {
 	color: #FFFFFF;
 }
 
+@media screen and (max-width: 650px) {
+	.select-menu-image {
+		width: calc(100% - 50px);
+	}
+}
+
 @media screen and (max-width: 775px) {
 	.top-content-wrap h1 {
 		font-size: 25px;
@@ -142,9 +148,5 @@ li {
 
 	.genre:not(:nth-child(3n + 1)) {
 		margin-left: 10px;
-	}
-
-	.select-menu-image {
-		width: calc(100% - 50px);
 	}
 }
