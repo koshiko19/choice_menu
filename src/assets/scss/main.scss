@@ -1,6 +1,150 @@
-@charset "utf-8";
+@charset "UTF-8";
+@use "color" as color;
 
 body {
-	background-color: aquamarine;
-	font-size: 30px;
+	color: color.$font_color;
+}
+
+li {
+	list-style: none;
+}
+
+.header {
+	height: 50px;
+	background: color.$main_color;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+}
+
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.top-content-wrap {
+	margin-top: 40px;
+}
+
+.random-button {
+	width: 210px;
+	background: color.$main_color;
+	border-radius: 4px;
+	margin: 0 auto;
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	box-sizing: border-box;
+	& > a {
+		display: block;
+		padding: 15px 0;
+		color: color.$font_color;
+	}
+}
+
+.choice-content-wrap {
+	margin-top: 25px;
+}
+
+.choice-genre {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 20px;
+}
+
+.genre {
+	width: 125px;
+	border: 3px solid color.$main_color;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-weight: bold;
+	a {
+		display: block;
+		padding: 15px 0;
+		color: color.$font_color;
+	}
+	&:hover {
+		background: color.$main_color;
+		color: color.$white_color;
+	}
+}
+
+.genre + .genre {
+	margin-left: 10px;
+}
+
+.select-choice-wrap {
+	margin-top: 25px;
+}
+
+.select-menu-image {
+	width: 500px;
+	height: auto;
+	margin-top: 10px;
+}
+
+.select-menu {
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.select-button {
+	width: 210px;
+	background: color.$main_color;
+	border-radius: 4px;
+	margin: 10px auto 0;
+	font-size: 15px;
+	font-weight: bold;
+	box-sizing: border-box;
+	a {
+		display: block;
+		padding: 15px 0;
+		color: color.$font_color;
+		&:hover {
+			color: color.$white_color;
+		}
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.select-menu-image {
+		width: calc(100% - 50px);
+	}
+}
+
+@media screen and (max-width: 775px) {
+	.top-content-wrap {
+		h1 {
+			font-size: 25px;
+		}
+	}
+
+	.choice-title {
+		font-size: 20px;
+	}
+
+	.choice-genre {
+		margin-top: 10px;
+	}
+
+	.genre {
+		width: calc(100% / 3 - 20px);
+		margin-top: 10px;
+		border: 3px solid color.$main_color;
+		border-radius: 4px;
+		box-sizing: border-box;
+		font-weight: bold;
+
+		&::not(:nth-child(3n + 1)){
+			margin-left: 10px;
+		}
+	}
+
+	.genre + .genre {
+		margin-left: 0px;
+	}
 }

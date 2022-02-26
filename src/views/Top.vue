@@ -22,7 +22,7 @@
 					<router-link :to="{name: 'Select', params: {id: 4}}">中華料理</router-link>
 				</li>
 				<li class="genre">
-					<router-link :to="{name: 'Select', params: {id: 5}}">鍋料理</router-link>
+					<router-link :to="{name: 'Select', params: {id: 5}}">アジア料理</router-link>
 				</li>
 				<li class="genre">
 					<router-link :to="{name: 'Select', params: {id: 6}}">軽食</router-link>
@@ -31,8 +31,3 @@
 		</div>
 	</div>
 </template>
-
-<script>
-	export default {
-	}
-</script>
