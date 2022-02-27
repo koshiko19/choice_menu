@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Top from '../views/Top.vue'
+import Top from '../views/topPage.vue'
 import Select from '../views/selectMenu.vue'
 
 
